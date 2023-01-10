@@ -7,15 +7,18 @@ const initState = {
 
 export const ObjectUseState = () => {
     const [person, setPerson] = useState(initState)
+
     const changeName = () => {
         // person.fname = 'Sahilkhan'
         // person.lname = 'Ahmadzai'
         // setPerson(person)
 
         const newPerson = {...person}
-        person.fname = 'Sahilkhan'
-        person.lname = 'Ahmadzai'
+        newPerson.fname = 'SahilKhan'
+        newPerson.lname = 'Ahmadzai'
         setPerson(newPerson)
+
+        console.log(newPerson)
     }
     console.log('ObjectState Render');
   return (
