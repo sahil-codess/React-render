@@ -1,10 +1,12 @@
+import React from 'react'
 import './App.css';
-import { ArrayUseState } from './Components/Immutable State/ArrayUseState';
+import Parent from './Components/Parent Child/Parent';
+
 
 function App() {
   return (
     <div className="App">
-        <ArrayUseState />
+        <Parent />
     </div>
   );
 }
