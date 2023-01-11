@@ -1,13 +1,11 @@
 import React from 'react'
 import './App.css';
-import { GrandParent } from './Components/Parent Child/GrandParent';
-
-
+import ParentTwo from './Components/Parent Child/ParentTwo';
 
 function App() {
   return (
     <div className="App">
-        <GrandParent />
+        <ParentTwo />
     </div>
   );
 }
