@@ -1,12 +1,15 @@
 import React from 'react'
 import './App.css';
-import Parent from './Components/Parent Child/Parent';
+import { ChildOne } from './Components/Parent Child/ChildOne';
+import ParentOne from './Components/Parent Child/ParentOne';
 
 
 function App() {
   return (
     <div className="App">
-        <Parent />
+        <ParentOne>
+          <ChildOne />
+        </ParentOne>
     </div>
   );
 }
