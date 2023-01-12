@@ -1,12 +1,11 @@
 import React from 'react'
 import './App.css';
-import ParentThree from './Components/Incorrect Optimization/ParentThree';
-
+import ParentFour from './Components/Incorrect Optimization/ParentFour';
 
 function App() {
   return (
     <div className="App">
-        <ParentThree />
+        <ParentFour />
     </div>
   );
 }
