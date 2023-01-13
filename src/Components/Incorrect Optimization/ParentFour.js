@@ -15,13 +15,15 @@ export const ParentFour = () => {
 
     const handlClick = () => {}
 
+    const memoizedHandle = useCallback(handlClick, [])
+
 
   return (
     <div>
         <button onClick={() => setCount((count) => count + 1)}>Count - {count}</button>
         <button onClick={() => setName('Sahilkhan')}>Change Name</button>
-        <MemoizedChildFive name={name} person={memoizedPerson} />
-        {/* <MemoizedChildFive name={name} person={person} /> */}
+        {/* <MemoizedChildFive name={name} person={memoizedPerson} /> */}
+        <MemoizedChildFive name={name} handlClick={memoizedHandle} />
     </div>
   )
 }
